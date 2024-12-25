@@ -65,3 +65,13 @@ Contributions are welcome! Feel free to submit pull requests or raise issues to 
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+
+
+![Screenshot (239)](https://github.com/user-attachments/assets/0acb9de5-2026-40bd-85d4-a89488810552)
+![Screenshot (240)](https://github.com/user-attachments/assets/bb43466a-3c16-484c-bba4-39fb3a209e5b)
+![Screenshot (241)](https://github.com/user-attachments/assets/931ffa53-d765-4ff4-904b-e06b6083a50c)
+![Screenshot (242)](https://github.com/user-attachments/assets/06671e13-28de-4f88-81d1-6680dc1f8750)
+
+
+
