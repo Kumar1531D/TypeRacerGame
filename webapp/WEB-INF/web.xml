@@ -1,0 +1,87 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>AddNewroomServlet</servlet-name>
+  	<display-name>AddNewroomServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.serv.AddNewroomServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DisplayServlet</servlet-name>
+  	<display-name>DisplayServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.serv.DisplayServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>PassCheckServlet</servlet-name>
+  	<display-name>PassCheckServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.serv.PassCheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WebSocketEndpoint</servlet-name>
+  	<display-name>WebSocketEndpoint</display-name>
+  	<description></description>
+  	<servlet-class>com.serv.WebSocketEndpoint</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UserPassCheck</servlet-name>
+  	<display-name>UserPassCheck</display-name>
+  	<description></description>
+  	<servlet-class>com.serv.UserPassCheck</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SignUp</servlet-name>
+  	<display-name>SignUp</display-name>
+  	<description></description>
+  	<servlet-class>com.serv.SignUp</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GuestServlet</servlet-name>
+  	<display-name>GuestServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.serv.GuestServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<display-name>LogoutServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.serv.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddNewroomServlet</servlet-name>
+  	<url-pattern>/AddNewroomServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DisplayServlet</servlet-name>
+  	<url-pattern>/DisplayServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>PassCheckServlet</servlet-name>
+  	<url-pattern>/PassCheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WebSocketEndpoint</servlet-name>
+  	<url-pattern>/ws</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UserPassCheck</servlet-name>
+  	<url-pattern>/UserPassCheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SignUp</servlet-name>
+  	<url-pattern>/SignUp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GuestServlet</servlet-name>
+  	<url-pattern>/GuestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

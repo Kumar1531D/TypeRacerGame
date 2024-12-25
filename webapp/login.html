@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        input {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Username" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button id="loginBtn">Login</button>
+        <h2>Signup</h2>
+        <input type="text" id="signupUsername" placeholder="Username" required>
+        <input type="password" id="signupPassword" placeholder="Password" required>
+        <button id="signupBtn">Signup</button>
+    </div>
+
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', function() {
+            const username = document.getElementById('loginUsername').value;
+            const password = document.getElementById('loginPassword').value;
+            const storedPassword = localStorage.getItem(username);
+
+            if (storedPassword && storedPassword === password) {
+                localStorage.setItem('loggedInUser', username);
+                window.location.href = 'index.html';
+            } else {
+                alert('Incorrect username or password');
+            }
+        });
+
+        document.getElementById('signupBtn').addEventListener('click', function() {
+            const username = document.getElementById('signupUsername').value;
+            const password = document.getElementById('signupPassword').value;
+
+            if (localStorage.getItem(username)) {
+                alert('Username already exists');
+            } else {
+                localStorage.setItem(username, password);
+                alert('Signup successful. You can now login.');
+            }
+        });
+    </script>
+</body>
+</html>
