@@ -62,9 +62,6 @@ A competitive multiplayer typing game where players race to type the given text 
 
 Contributions are welcome! Feel free to submit pull requests or raise issues to improve the game.
 
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 
 
